@@ -1,0 +1,16 @@
+{
+  "model": "custom XXZ spin chain",
+  "n_qubits": 4,
+  "j_xy": 1.0,
+  "j_zz": 0.8,
+  "h_field": 0.4,
+  "times": [0.5, 1.0, 1.5],
+  "steps": [1, 2, 4, 8],
+  "orders": [1, 2],
+  "processors": {
+    "A": "processors/processor_A.json",
+    "B": "processors/processor_B.json"
+  },
+  "noise_model": "depolarizing noise on single- and two-qubit gates",
+  "notes": "This project implements a compact, reproducible research prototype for comparing exact spin-chain evolution with first- and second-order Trotter product formulas under explicit processor constraints."
+}

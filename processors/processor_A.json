@@ -1,0 +1,9 @@
+{
+  "name": "Processor A",
+  "num_qubits": 5,
+  "coupling_map": [[0, 1], [1, 2], [2, 3], [3, 4]],
+  "basis_gates": ["rz", "sx", "x", "cx"],
+  "description": "Five-qubit chain topology used as the compact baseline reference processor.",
+  "optimization_level": 1,
+  "seed": 123
+}

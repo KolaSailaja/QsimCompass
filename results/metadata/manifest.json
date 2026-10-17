@@ -1,0 +1,9 @@
+{
+  "run_id": "default-benchmark",
+  "files": {
+    "benchmark_summary.json": "1873ea5264bcf53b3d2214dfe708d7199b6dfc565fd2297876af1e3a3c99ae74",
+    "experiment_config.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "rows": 48,
+  "status": "ok"
+}

@@ -1,0 +1,113 @@
+{
+  "problem": {
+    "n_qubits": 4,
+    "j_xy": 1.0,
+    "j_zz": 0.8,
+    "h_field": 0.4,
+    "final_time": 1.0
+  },
+  "processors": {
+    "A": {
+      "name": "Processor A",
+      "num_qubits": 5,
+      "coupling_map": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "basis_gates": [
+        "rz",
+        "sx",
+        "x",
+        "cx"
+      ],
+      "description": "Five-qubit chain topology used as the compact baseline reference processor.",
+      "optimization_level": 1,
+      "seed": 123
+    },
+    "B": {
+      "name": "Processor B",
+      "num_qubits": 9,
+      "coupling_map": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "basis_gates": [
+        "rz",
+        "sx",
+        "x",
+        "cx"
+      ],
+      "description": "Nine-qubit heavy-hex-inspired graph with a sparse, slightly richer connectivity pattern than Processor A.",
+      "optimization_level": 1,
+      "seed": 321
+    }
+  },
+  "times": [
+    0.5,
+    1.0,
+    1.5
+  ],
+  "steps": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "noise_model": "depolarizing_gate_noise"
+}
